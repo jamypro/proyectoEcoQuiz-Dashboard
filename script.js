@@ -131,6 +131,8 @@ function startRealtime() {
             tblResultados.innerHTML = "";
             snap.forEach((docSnap) => {
                 const d = docSnap.data();
+                console.log(d);
+
                 // timestamp conversion
                 let fecha = "-";
                 if (d.fechaFinalizacion && d.fechaFinalizacion.seconds) {
