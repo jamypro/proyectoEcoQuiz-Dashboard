@@ -167,7 +167,7 @@ function startRealtime() {
                 tblResultados.innerHTML += `
             <tr>
               <td>${escapeHtml(d.nombre || "-")}</td>
-              <td>${escapeHtml(String(puntaje))}</td>
+              <td>${escapeHtml(String(d.nivel || "-"))}</td>
               <td>${escapeHtml(String(d.nota))}</td>
               <td class='small'>${escapeHtml(tiempo)}</td>
               <td>${escapeHtml(String(aciertos))}</td>
