@@ -88,6 +88,14 @@
 
                 <div id="panelUsuarios" class="card" style="margin-top: 18px">
                     <h3>Usuarios registrados</h3>
+                    <div class="actions-bar">
+                        <button
+                            class="btn-danger"
+                            onclick="deleteAllRecords('registros')"
+                        >
+                            Eliminar todos
+                        </button>
+                    </div>
                     <p class="small">Actualizacion en tiempo real.</p>
                     <div style="overflow: auto; margin-top: 12px">
                         <table>
@@ -95,6 +103,7 @@
                                 <tr>
                                     <th>Nombre</th>
                                     <th>Fecha/Hora</th>
+                                    <th>Acciones</th>
                                 </tr>
                             </thead>
                             <tbody id="tblUsuarios"></tbody>
@@ -108,6 +117,14 @@
                     style="display: none; margin-top: 18px"
                 >
                     <h3>Resultados</h3>
+                    <div class="actions-bar">
+                        <button
+                            class="btn-danger"
+                            onclick="deleteAllRecords('resultados')"
+                        >
+                            Eliminar todos
+                        </button>
+                    </div>
                     <p class="small">Actualizacion en tiempo real.</p>
                     <div style="overflow: auto; margin-top: 12px">
                         <table>
@@ -121,6 +138,7 @@
                                     <th>Fallos</th>
                                     <th>Fecha</th>
                                     <th>Detalle</th>
+                                    <th>Acciones</th>
                                 </tr>
                             </thead>
                             <tbody id="tblResultados"></tbody>

@@ -167,6 +167,9 @@ tr:hover td {
     color: var(--muted);
 }
 
+.actions-bar {
+    margin-bottom: 12px;
+}
 .actions {
     display: flex;
     gap: 8px;
@@ -181,6 +184,18 @@ tr:hover td {
 }
 .btn-ghost:hover {
     background: rgba(255, 255, 255, 0.06);
+}
+.btn-danger {
+    background: transparent;
+    border: 1px solid var(--danger);
+    padding: 8px 10px;
+    border-radius: 8px;
+    color: var(--danger);
+    cursor: pointer;
+}
+.btn-danger:hover {
+    background: var(--danger);
+    color: #fff;
 }
 
 /* modal */
